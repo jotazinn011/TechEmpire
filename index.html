@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Empire | Manutenção de Computadores Preditiva e Preventiva</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome CDN para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Local -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-server"></i> Tech<span>Empire</span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu" aria-hidden="true">
+                <a href="#hero" class="nav-link active">Início</a>
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#por-que-nos" class="nav-link">Vantagens</a>
+                <a href="#comparativo" class="nav-link">Comparativo</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#contato" class="nav-link nav-cta-mobile">Solicitar Orçamento</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema visual">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="#contato" class="btn btn-primary btn-nav">Solicitar Orçamento</a>
+                <button class="hamburger" id="hamburger" aria-label="Abrir menu de navegação" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content animate-hidden">
+                    <span class="badge">Tech Empire — Manutenção de Computadores</span>
+                    <h1 class="hero-title">Evite paradas críticas. Maximize sua <span class="text-gradient">Performance</span>.</h1>
+                    <p class="hero-subtitle">Especialistas em engenharia de manutenção preventiva e preditiva para parques computacionais de alto padrão e servidores.</p>
+                    <div class="hero-buttons">
+                        <a href="#servicos" class="btn btn-secondary">Nossos Serviços</a>
+                        <a href="#contato" class="btn btn-primary">Falar com Consultor</a>
+                    </div>
+                </div>
+                <div class="hero-visual animate-hidden">
+                    <div class="tech-monitor">
+                        <div class="monitor-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="monitor-title">techempire_core_analytics.sh</span>
+                        </div>
+                        <div class="monitor-body">
+                            <div class="code-line"><span class="code-keyword">import</span> telemetry <span class="code-keyword">from</span> <span class="code-string">'@techempire/core'</span>;</div>
+                            <div class="code-line"><span class="code-comment"># Monitoramento preditivo ativo</span></div>
+                            <div class="code-line">const system = telemetry.initializeInfrastructure();</div>
+                            <div class="code-line">system.on(<span class="code-string">'anomaly_detection'</span>, (hardware) => {</div>
+                            <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;hardware.preventFailure();</div>
+                            <div class="code-line">});</div>
+                            <div class="chart-container">
+                                <div class="chart-bar" style="--h: 60%;"></div>
+                                <div class="chart-bar" style="--h: 85%;"></div>
+                                <div class="chart-bar pulse" style="--h: 40%;"></div>
+                                <div class="chart-bar" style="--h: 95%;"></div>
+                                <div class="chart-bar" style="--h: 70%;"></div>
+                            </div>
+                            <div class="system-status">
+                                <span class="status-indicator"></span> Status do Sistema: Operacional e Otimizado
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Serviços -->
+        <section id="servicos" class="services-section">
+            <div class="container">
+                <div class="section-header text-center animate-hidden">
+                    <span class="badge">Nossos Serviços</span>
+                    <h2>Soluções Avançadas de Engenharia de Hardware</h2>
+                    <p>Reduza custos ocultos e estenda drasticamente o ciclo de vida da sua infraestrutura computacional.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Card Preventiva -->
+                    <div class="service-card animate-hidden">
+                        <div class="card-inner">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                            </div>
+                            <h3>Manutenção Preventiva</h3>
+                            <p>Intervenções programadas focadas em limpeza interna avançada, substituição de interfaces térmicas industriais e calibração de fluxo de ar.</p>
+                            <ul class="tech-list">
+                                <li><i class="fa-solid fa-square-check"></i> Higienização química dielétrica de placas</li>
+                                <li><i class="fa-solid fa-square-check"></i> Troca de compostos térmicos de alta condutividade</li>
+                                <li><i class="fa-solid fa-square-check"></i> Upgrade físico estrutural de segurança</li>
+                                <li><i class="fa-solid fa-square-check"></i> Relatórios técnicos estruturados</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Card Preditiva -->
+                    <div class="service-card featured animate-hidden">
+                        <div class="card-inner">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <h3>Manutenção Preditiva</h3>
+                            <p>O estado da arte em proteção de dados e continuidade operacional. Monitoramos anomalias térmicas, de tensão e integridade por telemetria.</p>
+                            <ul class="tech-list">
+                                <li><i class="fa-solid fa-square-check"></i> Análise termográfica infravermelha de placas</li>
+                                <li><i class="fa-solid fa-square-check"></i> Análise espectral de ruídos e vibrações de coolers</li>
+                                <li><i class="fa-solid fa-square-check"></i> Monitoramento de ciclos de estresse por telemetria</li>
+                                <li><i class="fa-solid fa-square-check"></i> Previsão matemática de falha de componentes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Por que escolher a Tech Empire -->
+        <section id="por-que-nos" class="features-section">
+            <div class="container">
+                <div class="section-header text-center animate-hidden">
+                    <span class="badge">Diferenciais</span>
+                    <h2>A Escolha Estratégica para sua Empresa</h2>
+                    <p>Por que os maiores data centers e escritórios confiam na equipe da Tech Empire?</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card animate-hidden">
+                        <i class="fa-solid fa-shield-halved feature-icon"></i>
+                        <h4>Segurança Máxima</h4>
+                        <p>Processos homologados com total conformidade e ISOs de manuseio eletrostático (ESD).</p>
+                    </div>
+                    <div class="feature-card animate-hidden">
+                        <i class="fa-solid fa-chart-line feature-icon"></i>
+                        <h4>Retorno sobre Investimento</h4>
+                        <p>Aumento comprovado de até 35% na vida útil de servidores e computadores corporativos.</p>
+                    </div>
+                    <div class="feature-card animate-hidden">
+                        <i class="fa-solid fa-clock-rotate-left feature-icon"></i>
+                        <h4>Zero Downtime</h4>
+                        <p>Atuações planejadas fora do horário comercial para manter sua empresa faturando.</p>
+                    </div>
+                    <div class="feature-card animate-hidden">
+                        <i class="fa-solid fa-certificate feature-icon"></i>
+                        <h4>Engenheiros Certificados</h4>
+                        <p>Equipe técnica com especializações internacionais de arquitetura de hardware.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabela Comparativa Interativa -->
+        <section id="comparativo" class="table-section">
+            <div class="container">
+                <div class="section-header text-center animate-hidden">
+                    <span class="badge">Comparativo Direto</span>
+                    <h2>Escolha o Nível de Proteção Ideal</h2>
+                </div>
+
+                <div class="table-responsive animate-hidden">
+                    <table class="compare-table">
+                        <thead>
+                            <tr>
+                                <th>Recursos & Benefícios</th>
+                                <th>Tradicional (Reativa)</th>
+                                <th>Preventiva Tech Empire</th>
+                                <th class="highlight">Preditiva Tech Empire</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ação após a quebra do equipamento</td>
+                                <td><i class="fa-solid fa-circle-check text-success"></i> Sim</td>
+                                <td><i class="fa-solid fa-circle-xmark text-danger"></i> Não</td>
+                                <td class="highlight"><i class="fa-solid fa-circle-xmark text-danger"></i> Não</td>
+                            </tr>
+                            <tr>
+                                <td>Limpezas químicas e substituição térmica</td>
+                                <td><i class="fa-solid fa-circle-xmark text-danger"></i> Não</td>
+                                <td><i class="fa-solid fa-circle-check text-success"></i> Sim</td>
+                                <td class="highlight"><i class="fa-solid fa-circle-check text-success"></i> Sim</td>
+                            </tr>
+                            <tr>
+                                <td>Agendamento Inteligente fora de horário comercial</td>
+                                <td><i class="fa-solid fa-circle-xmark text-danger"></i> Não</td>
+                                <td><i class="fa-solid fa-circle-check text-success"></i> Sim</td>
+                                <td class="highlight"><i class="fa-solid fa-circle-check text-success"></i> Sim</td>
+                            </tr>
+                            <tr>
+                                <td>Sensores termográficos infravermelhos ativos</td>
+                                <td><i class="fa-solid fa-circle-xmark text-danger"></i> Não</td>
+                                <td><i class="fa-solid fa-circle-xmark text-danger"></i> Não</td>
+                                <td class="highlight"><i class="fa-solid fa-circle-check text-success"></i> Sim <span class="table-badge">Exclusivo</span></td>
+                            </tr>
+                            <tr>
+                                <td>Algoritmo de telemetria anti-falha futura</td>
+                                <td><i class="fa-solid fa-circle-xmark text-danger"></i> Não</td>
+                                <td><i class="fa-solid fa-circle-xmark text-danger"></i> Não</td>
+                                <td class="highlight"><i class="fa-solid fa-circle-check text-success"></i> Sim <span class="table-badge">Recomendado</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre a Empresa (Assimétrico) -->
+        <section id="sobre" class="about-section">
+            <div class="container about-grid">
+                <div class="about-text animate-hidden">
+                    <span class="badge">Sobre Nós</span>
+                    <h2>Construindo um império de estabilidade e performance digital.</h2>
+                    <p>Fundada por engenheiros de infraestrutura com passagens por grandes Tech Companies, a Tech Empire surgiu para revolucionar o mercado de manutenção de computadores corporativos, solucionando a perda massiva de produtividade devido a falhas previsíveis de hardware.</p>
+                    <p>Combinamos metodologias analíticas robustas com ferramentas proprietárias de software e hardware, transformando o gerenciamento do seu parque de máquinas de um gasto inesperado em uma ciência exata orientada a dados.</p>
+                </div>
+                <div class="about-visual animate-hidden">
+                    <div class="abstract-card">
+                        <div class="abstract-glowing-circle"></div>
+                        <div class="abstract-inner">
+                            <i class="fa-solid fa-microchip"></i>
+                            <p>Inovação Contínua</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Estatísticas Animadas -->
+        <section class="stats-section">
+            <div class="container stats-grid">
+                <div class="stat-item animate-hidden">
+                    <div class="stat-number" data-target="15000">0</div>
+                    <div class="stat-label">Máquinas Protegidas</div>
+                </div>
+                <div class="stat-item animate-hidden">
+                    <div class="stat-number" data-target="99">0</div>
+                    <div class="stat-label">% de Satisfação (CSAT)</div>
+                </div>
+                <div class="stat-item animate-hidden">
+                    <div class="stat-number" data-target="12">0</div>
+                    <div class="stat-label">Anos de Experiência</div>
+                </div>
+                <div class="stat-item animate-hidden">
+                    <div class="stat-number" data-target="24">0</div>
+                    <div class="stat-label">Suporte Técnico Ativo (Horas)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulário de Contato Inteligente -->
+        <section id="contato" class="contact-section">
+            <div class="container contact-container">
+                <div class="section-header text-center animate-hidden">
+                    <span class="badge">Contato</span>
+                    <h2>Inicie Seu Projeto de Proteção</h2>
+                    <p>Preencha os dados técnicos corporativos abaixo para receber um diagnóstico inicial detalhado e orçamento personalizado.</p>
+                </div>
+
+                <form id="contactForm" class="intelligent-form animate-hidden" novalidate>
+                    <div class="form-grid">
+                        <div class="input-group">
+                            <input type="text" id="nome" name="nome" required placeholder=" ">
+                            <label for="nome">Nome Completo</label>
+                            <span class="error-msg">Por favor, digite seu nome corporativo.</span>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" name="email" required placeholder=" ">
+                            <label for="email">E-mail Corporativo</label>
+                            <span class="error-msg">Insira um endereço de e-mail corporativo válido.</span>
+                        </div>
+                        <div class="input-group">
+                            <input type="tel" id="telefone" name="telefone" required placeholder=" ">
+                            <label for="telefone">Telefone / WhatsApp</label>
+                            <span class="error-msg">O número de telefone inserido é inválido.</span>
+                        </div>
+                        <div class="input-group">
+                            <select id="maquinas" name="maquinas" required>
+                                <option value="" disabled selected hidden></option>
+                                <option value="1-10">De 1 a 10 Computadores</option>
+                                <option value="11-50">De 11 a 50 Computadores</option>
+                                <option value="51-200">De 51 a 200 Computadores</option>
+                                <option value="200+">Mais de 200 Computadores / Servidores</option>
+                            </select>
+                            <label for="maquinas" class="select-label">Tamanho da Frota Computacional</label>
+                            <span class="error-msg">Por favor, selecione o tamanho do parque tecnológico.</span>
+                        </div>
+                    </div>
+                    <div class="input-group full-width">
+                        <textarea id="mensagem" name="mensagem" required placeholder=" "></textarea>
+                        <label for="mensagem">Descreva brevemente sua infraestrutura atual ou suas dores</label>
+                        <span class="error-msg">Insira uma mensagem explicativa básica.</span>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">Enviar Solicitação de Diagnóstico</button>
+                    
+                    <div id="formSuccess" class="form-feedback success-box hidden">
+                        <i class="fa-solid fa-circle-check"></i> Solicitação processada com absoluto sucesso! Nossos analistas de hardware entrarão em contato em até 2 horas.
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-server"></i> Tech<span>Empire</span>
+                </a>
+                <p class="footer-desc">Tech Empire — Manutenção de Computadores. Engenharia de confiabilidade computacional estruturada para empresas que demandam performance máxima.</p>
+            </div>
+            <div class="footer-links">
+                <h5>Links Rápidos</h5>
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#servicos">Nossos Serviços</a></li>
+                    <li><a href="#por-que-nos">Vantagens Técnicas</a></li>
+                    <li><a href="#sobre">Nossa História</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h5>Infraestrutura</h5>
+                <ul>
+                    <li><a href="#servicos">Manutenção Preditiva</a></li>
+                    <li><a href="#servicos">Manutenção Preventiva</a></li>
+                    <li><a href="#comparativo">Tabela Comparativa</a></li>
+                    <li><a href="#contato">Suporte Dedicado</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h5>Conectividade Tech</h5>
+                <div class="social-icons">
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Tech Empire S.A. Manutenção de Computadores. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Elementos Flutuantes -->
+    <a href="https://wa.me/5500000000000" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Falar conosco via WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <button id="backToTop" class="back-to-top" aria-label="Voltar para o topo da página">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Script Local -->
+    <script src="script.js"></script>
+</body>
+</html>
