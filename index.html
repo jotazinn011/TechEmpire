@@ -4,26 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Empire - Super Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Tech Empire - Manutenção de Computadores em Carlos Chagas</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <div class="logo-icon">
-                    <i class="fas fa-crown"></i>
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <div class="logo-crown">
+                    <img src="Logo (3).png" alt="Tech Empire Logo" class="logo-img">
                 </div>
-                <span class="logo-text">Tech Empire</span>
+                <div>
+                    <h1>Tech Empire</h1>
+                    <p>Manutenção de Computadores</p>
+                </div>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#dashboard" class="nav-link">Dashboard</a></li>
-                <li><a href="#monitor" class="nav-link">Monitor</a></li>
-                <li><a href="#analytics" class="nav-link">Analytics</a></li>
-                <li><a href="#sistema" class="nav-link">Sistema</a></li>
+            <ul class="navbar-menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -33,491 +35,259 @@
         </div>
     </nav>
 
-    <!-- SUPER DASHBOARD SECTION -->
-    <section id="dashboard" class="super-dashboard">
-        <div class="matrix-background"></div>
-
-        <div class="dashboard-header">
-            <h1 class="dashboard-title">
-                <span class="title-icon">⚙️</span> SUPER DASHBOARD
-                <span class="title-icon">⚙️</span>
-            </h1>
-            <div class="status-bar">
-                <span class="status-item">
-                    <span class="dot online"></span> SISTEMA: ONLINE
-                </span>
-                <span class="status-item">
-                    <span class="dot"></span> CPU: <span id="cpu-status">45%</span>
-                </span>
-                <span class="status-item">
-                    <span class="dot"></span> RAM: <span id="ram-status">62%</span>
-                </span>
-                <span class="status-item">
-                    <span class="dot"></span> TEMP: <span id="temp-status">38°C</span>
-                </span>
-            </div>
-        </div>
-
-        <!-- TOP METRICS ROW -->
-        <div class="metrics-row top-metrics">
-            <div class="metric-card primary">
-                <div class="metric-header">
-                    <span class="metric-label">CLIENTES ATIVOS</span>
-                    <span class="metric-icon"><i class="fas fa-users"></i></span>
-                </div>
-                <div class="metric-value-large">1,247</div>
-                <div class="metric-bar">
-                    <div class="bar-fill" style="width: 87%"></div>
-                </div>
-                <span class="metric-change positive">↑ +12% hoje</span>
-            </div>
-
-            <div class="metric-card secondary">
-                <div class="metric-header">
-                    <span class="metric-label">SERVIÇOS CONCLUÍDOS</span>
-                    <span class="metric-icon"><i class="fas fa-check-circle"></i></span>
-                </div>
-                <div class="metric-value-large">856</div>
-                <div class="metric-bar">
-                    <div class="bar-fill" style="width: 94%"></div>
-                </div>
-                <span class="metric-change positive">↑ +23% este mês</span>
-            </div>
-
-            <div class="metric-card accent">
-                <div class="metric-header">
-                    <span class="metric-label">DESEMPENHO</span>
-                    <span class="metric-icon"><i class="fas fa-rocket"></i></span>
-                </div>
-                <div class="metric-value-large">98.7%</div>
-                <div class="metric-bar">
-                    <div class="bar-fill" style="width: 98.7%"></div>
-                </div>
-                <span class="metric-change positive">↑ Excelente</span>
-            </div>
-
-            <div class="metric-card danger">
-                <div class="metric-header">
-                    <span class="metric-label">EM ANDAMENTO</span>
-                    <span class="metric-icon"><i class="fas fa-hourglass-half"></i></span>
-                </div>
-                <div class="metric-value-large">42</div>
-                <div class="metric-bar">
-                    <div class="bar-fill" style="width: 35%"></div>
-                </div>
-                <span class="metric-change">Aguardando...</span>
-            </div>
-        </div>
-
-        <!-- MAIN DASHBOARD GRID -->
-        <div class="dashboard-grid">
-            <!-- PERFORMANCE CHART -->
-            <div class="dashboard-panel large">
-                <div class="panel-header">
-                    <h3 class="panel-title"><i class="fas fa-chart-line"></i> PERFORMANCE EM TEMPO REAL</h3>
-                    <span class="panel-status live">● LIVE</span>
-                </div>
-                <div class="chart-area">
-                    <div class="performance-graph">
-                        <div class="graph-line" style="--height: 45%"></div>
-                        <div class="graph-line" style="--height: 62%"></div>
-                        <div class="graph-line" style="--height: 38%"></div>
-                        <div class="graph-line" style="--height: 71%"></div>
-                        <div class="graph-line" style="--height: 55%"></div>
-                        <div class="graph-line" style="--height: 68%"></div>
-                        <div class="graph-line" style="--height: 42%"></div>
-                        <div class="graph-line" style="--height: 79%"></div>
-                        <div class="graph-line" style="--height: 51%"></div>
-                        <div class="graph-line" style="--height: 65%"></div>
-                    </div>
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Computadores mais rápidos, <span class="gradient-text">sem worry</span></h1>
+                <p>Manutenção profissional de computadores e notebooks em Carlos Chagas, MG. Atendimento rápido,
+                    confiável e com garantia.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary"
+                        onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">
+                        Solicitar Diagnóstico Grátis
+                    </button>
+                    <a href="https://wa.me/5533988841468" class="btn-secondary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Conversar no WhatsApp
+                    </a>
                 </div>
             </div>
-
-            <!-- SYSTEM STATUS -->
-            <div class="dashboard-panel">
-                <div class="panel-header">
-                    <h3 class="panel-title"><i class="fas fa-server"></i> STATUS DO SISTEMA</h3>
+            <div class="hero-image">
+                <div class="floating-card card-1">
+                    <i class="fas fa-laptop"></i>
+                    <p>Notebooks</p>
                 </div>
-                <div class="status-list">
-                    <div class="status-row ok">
-                        <span class="status-name">Processador</span>
-                        <div class="status-visual">
-                            <div class="status-bar" style="width: 45%"></div>
-                        </div>
-                        <span class="status-value">45%</span>
-                    </div>
-                    <div class="status-row ok">
-                        <span class="status-name">Memória RAM</span>
-                        <div class="status-visual">
-                            <div class="status-bar" style="width: 62%"></div>
-                        </div>
-                        <span class="status-value">62%</span>
-                    </div>
-                    <div class="status-row ok">
-                        <span class="status-name">Armazenamento</span>
-                        <div class="status-visual">
-                            <div class="status-bar" style="width: 73%"></div>
-                        </div>
-                        <span class="status-value">73%</span>
-                    </div>
-                    <div class="status-row warning">
-                        <span class="status-name">Temperatura</span>
-                        <div class="status-visual">
-                            <div class="status-bar" style="width: 68%"></div>
-                        </div>
-                        <span class="status-value">68°C</span>
-                    </div>
-                    <div class="status-row ok">
-                        <span class="status-name">Conexão</span>
-                        <div class="status-visual">
-                            <div class="status-bar" style="width: 95%"></div>
-                        </div>
-                        <span class="status-value">95%</span>
-                    </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-desktop"></i>
+                    <p>Desktop</p>
                 </div>
-            </div>
-
-            <!-- ACTIVE SERVICES -->
-            <div class="dashboard-panel">
-                <div class="panel-header">
-                    <h3 class="panel-title"><i class="fas fa-wrench"></i> SERVIÇOS ATIVOS</h3>
+                <div class="floating-card card-3">
+                    <i class="fas fa-tools"></i>
+                    <p>Suporte</p>
                 </div>
-                <div class="services-list">
-                    <div class="service-item active">
-                        <div class="service-dot"></div>
-                        <div class="service-info">
-                            <span class="service-name">Manutenção Hardware</span>
-                            <span class="service-time">45 em progresso</span>
-                        </div>
-                        <span class="service-badge">↗ 12</span>
-                    </div>
-                    <div class="service-item active">
-                        <div class="service-dot"></div>
-                        <div class="service-info">
-                            <span class="service-name">Segurança & Antivírus</span>
-                            <span class="service-time">28 em progresso</span>
-                        </div>
-                        <span class="service-badge">↗ 8</span>
-                    </div>
-                    <div class="service-item active">
-                        <div class="service-dot"></div>
-                        <div class="service-info">
-                            <span class="service-name">Recuperação de Dados</span>
-                            <span class="service-time">12 em progresso</span>
-                        </div>
-                        <span class="service-badge">↗ 3</span>
-                    </div>
-                    <div class="service-item">
-                        <div class="service-dot"></div>
-                        <div class="service-info">
-                            <span class="service-name">Otimização Performance</span>
-                            <span class="service-time">34 concluídos hoje</span>
-                        </div>
-                        <span class="service-badge">✓</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- SECOND ROW PANELS -->
-        <div class="dashboard-grid">
-            <!-- CPU CORES MONITOR -->
-            <div class="dashboard-panel">
-                <div class="panel-header">
-                    <h3 class="panel-title"><i class="fas fa-microchip"></i> CORES DA CPU</h3>
-                </div>
-                <div class="cores-grid">
-                    <div class="core-monitor" style="--usage: 45%">
-                        <div class="core-value">45%</div>
-                        <span class="core-label">Core 0</span>
-                    </div>
-                    <div class="core-monitor" style="--usage: 62%">
-                        <div class="core-value">62%</div>
-                        <span class="core-label">Core 1</span>
-                    </div>
-                    <div class="core-monitor" style="--usage: 38%">
-                        <div class="core-value">38%</div>
-                        <span class="core-label">Core 2</span>
-                    </div>
-                    <div class="core-monitor" style="--usage: 71%">
-                        <div class="core-value">71%</div>
-                        <span class="core-label">Core 3</span>
-                    </div>
-                    <div class="core-monitor" style="--usage: 55%">
-                        <div class="core-value">55%</div>
-                        <span class="core-label">Core 4</span>
-                    </div>
-                    <div class="core-monitor" style="--usage: 68%">
-                        <div class="core-value">68%</div>
-                        <span class="core-label">Core 5</span>
-                    </div>
-                    <div class="core-monitor" style="--usage: 42%">
-                        <div class="core-value">42%</div>
-                        <span class="core-label">Core 6</span>
-                    </div>
-                    <div class="core-monitor" style="--usage: 79%">
-                        <div class="core-value">79%</div>
-                        <span class="core-label">Core 7</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- NETWORK TRAFFIC -->
-            <div class="dashboard-panel">
-                <div class="panel-header">
-                    <h3 class="panel-title"><i class="fas fa-network-wired"></i> TRÁFEGO DE REDE</h3>
-                </div>
-                <div class="network-stats">
-                    <div class="network-item download">
-                        <div class="network-icon">
-                            <i class="fas fa-arrow-down"></i>
-                        </div>
-                        <div class="network-info">
-                            <span class="network-label">Download</span>
-                            <span class="network-value">245.67 MB/s</span>
-                        </div>
-                    </div>
-                    <div class="network-item upload">
-                        <div class="network-icon">
-                            <i class="fas fa-arrow-up"></i>
-                        </div>
-                        <div class="network-info">
-                            <span class="network-label">Upload</span>
-                            <span class="network-value">125.34 MB/s</span>
-                        </div>
-                    </div>
-                    <div class="network-item ping">
-                        <div class="network-icon">
-                            <i class="fas fa-globe"></i>
-                        </div>
-                        <div class="network-info">
-                            <span class="network-label">Ping</span>
-                            <span class="network-value">12.4 ms</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ALERTS & NOTIFICATIONS -->
-            <div class="dashboard-panel">
-                <div class="panel-header">
-                    <h3 class="panel-title"><i class="fas fa-bell"></i> ALERTAS</h3>
-                </div>
-                <div class="alerts-list">
-                    <div class="alert info">
-                        <div class="alert-icon"><i class="fas fa-info-circle"></i></div>
-                        <div class="alert-content">
-                            <span class="alert-title">Atualização Disponível</span>
-                            <span class="alert-time">há 2 horas</span>
-                        </div>
-                    </div>
-                    <div class="alert warning">
-                        <div class="alert-icon"><i class="fas fa-exclamation-triangle"></i></div>
-                        <div class="alert-content">
-                            <span class="alert-title">Temperatura Elevada</span>
-                            <span class="alert-time">há 15 min</span>
-                        </div>
-                    </div>
-                    <div class="alert success">
-                        <div class="alert-icon"><i class="fas fa-check-circle"></i></div>
-                        <div class="alert-content">
-                            <span class="alert-title">Backup Concluído</span>
-                            <span class="alert-time">há 1 hora</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- THIRD ROW - ANALYTICS -->
-        <div id="analytics" class="dashboard-grid triple">
-            <!-- STORAGE BREAKDOWN -->
-            <div class="dashboard-panel">
-                <div class="panel-header">
-                    <h3 class="panel-title"><i class="fas fa-hdd"></i> ARMAZENAMENTO</h3>
-                </div>
-                <div class="storage-breakdown">
-                    <div class="storage-item">
-                        <div class="storage-label">Sistema</div>
-                        <div class="storage-bar">
-                            <div class="storage-fill" style="width: 35%; --color: #00FF88;"></div>
-                        </div>
-                        <span class="storage-value">350 GB</span>
-                    </div>
-                    <div class="storage-item">
-                        <div class="storage-label">Aplicativos</div>
-                        <div class="storage-bar">
-                            <div class="storage-fill" style="width: 28%; --color: #FF6B35;"></div>
-                        </div>
-                        <span class="storage-value">280 GB</span>
-                    </div>
-                    <div class="storage-item">
-                        <div class="storage-label">Usuários</div>
-                        <div class="storage-bar">
-                            <div class="storage-fill" style="width: 22%; --color: #C0C0C0;"></div>
-                        </div>
-                        <span class="storage-value">220 GB</span>
-                    </div>
-                    <div class="storage-item">
-                        <div class="storage-label">Backup</div>
-                        <div class="storage-bar">
-                            <div class="storage-fill" style="width: 15%; --color: #00CCFF;"></div>
-                        </div>
-                        <span class="storage-value">150 GB</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- SERVICE COMPLETION RATE -->
-            <div class="dashboard-panel">
-                <div class="panel-header">
-                    <h3 class="panel-title"><i class="fas fa-chart-pie"></i> TAXA DE CONCLUSÃO</h3>
-                </div>
-                <div class="completion-chart">
-                    <div class="pie-chart">
-                        <div class="pie-segment" style="--rotation: 0deg; --size: 87%;">
-                            <span class="segment-label">87%</span>
-                        </div>
-                    </div>
-                    <div class="completion-info">
-                        <div class="info-item">
-                            <span class="dot" style="--color: #00FF88;"></span>
-                            <span>Concluídos: 856</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="dot" style="--color: #FF6B35;"></span>
-                            <span>Pendentes: 128</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- UPTIME MONITOR -->
-            <div class="dashboard-panel">
-                <div class="panel-header">
-                    <h3 class="panel-title"><i class="fas fa-heart"></i> UPTIME</h3>
-                </div>
-                <div class="uptime-display">
-                    <div class="uptime-value">99.97%</div>
-                    <div class="uptime-bar">
-                        <div class="uptime-fill" style="width: 99.97%"></div>
-                    </div>
-                    <div class="uptime-info">
-                        <span>Última queda: 2 dias atrás</span>
-                        <span>Tempo ativo: 87 dias</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- SISTEMA SECTION -->
-        <div id="sistema" class="dashboard-grid full-width">
-            <!-- RUNNING PROCESSES -->
-            <div class="dashboard-panel large">
-                <div class="panel-header">
-                    <h3 class="panel-title"><i class="fas fa-cogs"></i> PROCESSOS EM EXECUÇÃO</h3>
-                </div>
-                <div class="processes-table">
-                    <div class="table-header">
-                        <span class="col-name">Processo</span>
-                        <span class="col-pid">PID</span>
-                        <span class="col-cpu">CPU</span>
-                        <span class="col-ram">RAM</span>
-                        <span class="col-status">Status</span>
-                    </div>
-                    <div class="table-rows">
-                        <div class="table-row">
-                            <span class="col-name"><i class="fas fa-browser"></i> Chrome.exe</span>
-                            <span class="col-pid">2847</span>
-                            <span class="col-cpu">12.5%</span>
-                            <span class="col-ram">856 MB</span>
-                            <span class="col-status"><span class="status-badge ok">Rodando</span></span>
-                        </div>
-                        <div class="table-row">
-                            <span class="col-name"><i class="fas fa-code"></i> VSCode.exe</span>
-                            <span class="col-pid">3124</span>
-                            <span class="col-cpu">8.2%</span>
-                            <span class="col-ram">523 MB</span>
-                            <span class="col-status"><span class="status-badge ok">Rodando</span></span>
-                        </div>
-                        <div class="table-row">
-                            <span class="col-name"><i class="fas fa-shield"></i> Antivirus.exe</span>
-                            <span class="col-pid">1256</span>
-                            <span class="col-cpu">3.1%</span>
-                            <span class="col-ram">234 MB</span>
-                            <span class="col-status"><span class="status-badge ok">Monitorando</span></span>
-                        </div>
-                        <div class="table-row">
-                            <span class="col-name"><i class="fas fa-database"></i> SQL.exe</span>
-                            <span class="col-pid">892</span>
-                            <span class="col-cpu">5.7%</span>
-                            <span class="col-ram">1.2 GB</span>
-                            <span class="col-status"><span class="status-badge ok">Rodando</span></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- FOOTER STATS -->
-        <div class="dashboard-footer">
-            <div class="footer-stat">
-                <i class="fas fa-clock"></i>
-                <span>Última atualização: <span id="update-time">agora</span></span>
-            </div>
-            <div class="footer-stat">
-                <i class="fas fa-signal"></i>
-                <span>Conexão: Estável</span>
-            </div>
-            <div class="footer-stat">
-                <i class="fas fa-server"></i>
-                <span>Servidor: tech-empire-01</span>
-            </div>
-            <div class="footer-stat">
-                <i class="fas fa-location-dot"></i>
-                <span>Local: Carlos Chagas - MG</span>
             </div>
         </div>
     </section>
 
-    <!-- MONITOR SECTION - Live Monitoring -->
-    <section id="monitor" class="live-monitor">
-        <h2 class="section-title">MONITOR EM TEMPO REAL</h2>
-        <div class="monitor-grid">
-            <div class="monitor-panel">
-                <div class="monitor-title">CPU REAL-TIME</div>
-                <div class="monitor-display">
-                    <div class="circular-progress" style="--percentage: 45">
-                        <span class="progress-text">45%</span>
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <div class="sobre-grid">
+                <div class="sobre-content">
+                    <span class="badge">SOBRE NÓS</span>
+                    <h2>Sua confiança é nosso maior <span class="highlight">prêmio</span></h2>
+                    <p>A Tech Empire é uma empresa especializada em manutenção, reparo e suporte de computadores em
+                        Carlos Chagas, MG. Somos referência em qualidade e comprometimento com a satisfação dos nossos
+                        clientes.</p>
+                    <p>Nossa equipe utiliza as melhores práticas e equipamentos modernos para garantir que seus
+                        equipamentos funcionem perfeitamente, com máxima eficiência e durabilidade.</p>
+
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4>Diagnóstico Preciso</h4>
+                                <p>Avaliação detalhada e transparente do seu equipamento</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4>Técnicos Especialistas</h4>
+                                <p>Profissionais qualificados para resolver qualquer problema</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4>Garantia nos Serviços</h4>
+                                <p>Confiança total e suporte pós-atendimento em cada trabalho</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="monitor-panel">
-                <div class="monitor-title">RAM REAL-TIME</div>
-                <div class="monitor-display">
-                    <div class="circular-progress" style="--percentage: 62">
-                        <span class="progress-text">62%</span>
+
+                <div class="sobre-stats">
+                    <div class="stat-box">
+                        <h3><i class="fas fa-broom" style="color: var(--primary); font-size: 28px;"></i></h3>
+                        <p style="font-weight: 700; margin-top: 10px; color: var(--primary); font-size: 16px;">Limpeza
+                            Química</p>
+                        <p style="font-size: 13px; color: var(--text-gray); margin-top: 5px;">Prevenção contra
+                            superaquecimento e oxidação.</p>
                     </div>
-                </div>
-            </div>
-            <div class="monitor-panel">
-                <div class="monitor-title">TEMPERATURA</div>
-                <div class="monitor-display">
-                    <div class="circular-progress" style="--percentage: 68">
-                        <span class="progress-text">68°C</span>
+
+                    <div class="stat-box">
+                        <h3><i class="fas fa-hdd" style="color: var(--primary); font-size: 28px;"></i></h3>
+                        <p style="font-weight: 700; margin-top: 10px; color: var(--primary); font-size: 16px;">Upgrade
+                            de SSD</p>
+                        <p style="font-size: 13px; color: var(--text-gray); margin-top: 5px;">Aumento drástico na
+                            velocidade e performance do sistema.</p>
                     </div>
-                </div>
-            </div>
-            <div class="monitor-panel">
-                <div class="monitor-title">REDE</div>
-                <div class="monitor-display">
-                    <div class="circular-progress" style="--percentage: 95">
-                        <span class="progress-text">95%</span>
+
+                    <div class="stat-box">
+                        <h3><i class="fas fa-microchip" style="color: var(--primary); font-size: 28px;"></i></h3>
+                        <p style="font-weight: 700; margin-top: 10px; color: var(--primary); font-size: 16px;">Reparo de
+                            Placa</p>
+                        <p style="font-size: 13px; color: var(--text-gray); margin-top: 5px;">Manutenção avançada em
+                            circuitos e componentes eletrônicos.</p>
+                    </div>
+
+                    <div class="stat-box">
+                        <h3><i class="fas fa-laptop-code" style="color: var(--primary); font-size: 28px;"></i></h3>
+                        <p style="font-weight: 700; margin-top: 10px; color: var(--primary); font-size: 16px;">
+                            Formatação S.O.</p>
+                        <p style="font-size: 13px; color: var(--text-gray); margin-top: 5px;">Instalação limpa de
+                            Sistemas Operacionais com Backup seguro.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">SERVIÇOS</span>
+                <h2>O que oferecemos para você</h2>
+                <p>Soluções completas para manter seu computador funcionando perfeitamente</p>
+            </div>
+            <div class="servicos-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Manutenção Preventiva</h3>
+                    <p>Limpeza física completa, otimização e atualização para evitar falhas futuras.</p>
+                    <a href="#contato" class="service-link">Solicitar →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Troca de Componentes</h3>
+                    <p>Substituição e upgrade de SSD, memória RAM e processadores com garantia.</p>
+                    <a href="#contato" class="service-link">Solicitar →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Remoção de Vírus</h3>
+                    <p>Limpeza profissional de malwares, adwares e spywares do sistema.</p>
+                    <a href="#contato" class="service-link">Solicitar →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Recuperação de Dados</h3>
+                    <p>Recuperação segura de arquivos perdidos em discos rígidos ou corrompidos.</p>
+                    <a href="#contato" class="service-link">Solicitar →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Redes e Wifi</h3>
+                    <p>Configuração, cabeamento estruturado e otimização de sinal de conectividade.</p>
+                    <a href="#contato" class="service-link">Solicitar →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Suporte Técnico</h3>
+                    <p>Assistência remota ou presencial imediata para a resolução de dúvidas técnicas.</p>
+                    <a href="#contato" class="service-link">Solicitar →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">CONTATO</span>
+                <h2>Solicite um diagnóstico grátis</h2>
+                <p>Preencha os dados do aparelho para iniciarmos sua triagem técnica direta via WhatsApp</p>
+            </div>
+            <div class="contato-grid">
+                <div class="contato-form-box">
+                    <form class="contato-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="nome">Seu Nome *</label>
+                            <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="aparelho">Qual é o Aparelho? *</label>
+                            <input type="text" id="aparelho" placeholder="Ex: Notebook Dell, Desktop Gamer, etc..."
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="defeito">Qual é o Defeito? *</label>
+                            <textarea id="defeito"
+                                placeholder="Descreva de forma detalhada os sintomas que a sua máquina apresenta..."
+                                rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            Enviar Mensagem via WhatsApp
+                        </button>
+                    </form>
+                </div>
+                <div class="contato-info-box">
+                    <h3>Informações de Contato</h3>
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Localização</h4>
+                            <p>Carlos Chagas, MG - Brasil</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefone Comercial</h4>
+                            <p>(33) 98841-4684</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horário de Atendimento</h4>
+                            <p>Segunda a Sexta: 8h às 18h</p>
+                            <p>Sábado: 8h às 13h</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-star"></i>
+                        <div>
+                            <h4>Diferenciais</h4>
+                            <p>✓ Orçamento transparente<br>✓ Garantia real em serviços<br>✓ Atendimento especializado
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Tech Empire - Manutenção de Computadores. Todos os direitos reservados.</p>
+                <p>Carlos Chagas, MG | (33) 98841-4684</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5533988414684" class="whatsapp-btn" target="_blank"
+        title="Clique para conversar no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <script src="script.js"></script>
 </body>
